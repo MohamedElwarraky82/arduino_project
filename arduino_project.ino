@@ -9,7 +9,7 @@ void assert_not_equal(String name, int x, int y);
 
 void test1(){
   int x = 5;
-  int y = 5;
+  int y = 6;
   assert_equal("Test1", x, y);
 }
 
