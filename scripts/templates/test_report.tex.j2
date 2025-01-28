@@ -1,0 +1,37 @@
+\documentclass[12pt letterpaper]{report}
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \large\textbf{Test Report Document} \\
+        \large\textit{Eng. Mohamed Elwarraky}\\
+        \large\today
+    \end{center}
+
+\end{titlepage}
+
+\newpage
+
+\chapter{Introduction}
+\section{First Section}
+this is the first section.
+
+\section{Second Section}
+this is the second section.
+
+\subsection{First Subsection}
+This is the first subsection.
+
+
+\chapter{Test Result}
+
+\begin{center}
+    \begin{tabular}{|| c | c ||} \hline
+        Test Name & Result \\ \hline \hline
+        {% for key, value in Tests.items() %}
+            {{key}} & {{value}} \\ \hline
+        {% endfor %}
+    \end{tabular}
+\end{center}
+
+\end{document}
